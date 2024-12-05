@@ -22,26 +22,32 @@ function targetFunction(e){
     }
     //uppgift 5
 }
-//fetchCheckbox.addEventListener("click", handleColor);
-//fetchCheckbox((field) => field.addEventListener('onclick', handleColor));
- 
-const dynamicDisplay = document.getElementById('tomDiv');
 
-function handleColor(e) {
-    const colorField = document.querySelector('input[name="color"]');
-    const contentField = document.querySelector('input[name="content"]');
+function handleColor(e){
+    const colorField = e.target.value;
     if (colorField) {
-        tomDiv.style.backgroundColor = colorField.value;
+        tomDiv.style.backgroundColor = colorField;
+    } 
+
+}
+
+function handleColor() {
+    const colorField = textFields[0];
+    const colorValue = colorField.value;
+    if (colorField) {
+        tomDiv.style.backgroundColor = colorValue;
     } 
 }
 
 fetchCheckbox.forEach((checkbox) => {
     checkbox.addEventListener("change", handleColor);
 });  
+
 for (let i = 0; i < textFields.length; i++) {
     //For-loop för htmlcollection objekt
     textFields[i].addEventListener("input", targetFunction);
 }  
+
 knappElement.addEventListener("click", () => {
     tomDiv.style.display = "none";
 }); 
