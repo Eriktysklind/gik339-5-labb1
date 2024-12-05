@@ -56,6 +56,5 @@ for (let i = 0; i < textFields.length; i++) {
 }  
 
 knappElement.addEventListener("click", () => {
-    //tomDiv.style.display = "none";
     tomDiv.remove();
 }); 
