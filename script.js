@@ -20,13 +20,17 @@ const tomDiv= document.getElementById("tomDiv");
 //Använder fyra olika DOM-funktioner, uppgift 4
 
 function targetFunction(e){
-    //Funktionsdeklartion
+    //Funktionen targetFunction körs när ett event triggas.
     console.log("Target: ", e.target);
+    //Skriver ut det element som triggat eventet (e.target) till konsolen.
     
     const inputFalt = e.target.name;
-
+    //Hämtar name-attributet från elementet som triggas av eventet och lagrar det i en variabel
     if(inputFalt === 'content'){
+        //Kontrollerar om inputFalt är lika med content
         tomDiv.innerHTML = e.target.value;
+        //Om vilkoret är sant hämtar vi värdet och tilldelar det värdet till tomDiv elementet
+        //Vi anvädet innerHTML för ändra innehållet i ett HTML element och i detta tomDiv
     }
     //uppgift 5
 }
