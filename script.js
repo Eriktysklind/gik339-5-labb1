@@ -11,6 +11,7 @@ const tomDiv= document.getElementById("tomDiv");
 console.log(tomDiv);
 //Använder fyra olika DOM-funktioner, uppgift 4
 
+
 function targetFunction(e){
     //Funktionsdeklartion
     console.log("Target: ", e.target);
