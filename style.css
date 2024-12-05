@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+} 
+ 
+input, label, button, #tomDiv {
+    margin: 0.3rem;
+}
+
+#tomDiv {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    min-width: 10rem;
+}

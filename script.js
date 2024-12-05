@@ -1,5 +1,5 @@
 const fetchCheckbox = document.querySelectorAll('.checkbox');
-//console.log(fetchCheckbox);
+//Deklarerar en const variabel som vi tilldelar alla checkbox element
 
 const textFields = document.getElementsByClassName('textfield');
 console.log(textFields)
