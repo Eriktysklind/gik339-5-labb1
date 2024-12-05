@@ -1,16 +1,23 @@
 const fetchCheckbox = document.querySelectorAll('.checkbox');
-//Deklarerar en const variabel som vi tilldelar alla checkbox element
+//Deklarerar en const variabel som vi tilldelar alla checkbox element 
+//och skapar ett nodelist objekt
+//https://www.w3schools.com/js/js_htmldom_nodelist.asp
 
 const textFields = document.getElementsByClassName('textfield');
-console.log(textFields)
+//Deklarerar en const variabel som vi tilldelar alla element som har 
+//klassnamnet textfield och skapar ett HTMLCollection objekt
+//https://www.w3schools.com/js/js_htmldom_collections.asp
 
 const knappElement = document.getElementsByTagName("button")[0];
-console.log(knappElement);
+//Deklarerar en const variabel som vi tilldelar första elementet som är en button 
+//och skapar ett HTMLElement objekt
+//https://www.w3schools.com/js/js_htmldom_collections.asp
 
 const tomDiv= document.getElementById("tomDiv");
-console.log(tomDiv);
-//Använder fyra olika DOM-funktioner, uppgift 4
+//Deklarerar en const variabel som vi tilldelar första elementet
+//som har id tomDiv
 
+//Använder fyra olika DOM-funktioner, uppgift 4
 
 function targetFunction(e){
     //Funktionsdeklartion
@@ -29,7 +36,6 @@ function handleColor(e){
     if (colorField) {
         tomDiv.style.backgroundColor = colorField;
     } 
-
 }
 
 function handleColor() {
@@ -50,5 +56,6 @@ for (let i = 0; i < textFields.length; i++) {
 }  
 
 knappElement.addEventListener("click", () => {
-    tomDiv.style.display = "none";
+    //tomDiv.style.display = "none";
+    tomDiv.remove();
 }); 
